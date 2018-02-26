@@ -41,5 +41,5 @@ func CreateSession(host string) (*mgo.Session, error) {
 }
 
 func (db *DB) Collection() *mgo.Collection {
-	return db.Session.Clone().DB(dbName).C(patientCollection)
+	return db.Session.DB(dbName).C(patientCollection)
 }
