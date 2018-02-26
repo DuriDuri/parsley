@@ -1,7 +1,6 @@
 package db
 
 import (
-	"fmt"
 	"gopkg.in/mgo.v2"
 	"os"
 )
@@ -16,11 +15,8 @@ type DB struct {
 }
 
 func Init() (*DB, error) {
-	// Database host from the environment variables
 	host := os.Getenv("DB_HOST")
 	if host == "" {
-		// mongo instance for deployed version
-		fmt.Print("Didnt find DB_HOST")
 		host = "mongodb://parsley:qwerty123@ds147228.mlab.com:47228/parsley"
 	}
 
@@ -41,9 +37,9 @@ func CreateSession(host string) (*mgo.Session, error) {
 	}
 
 	session.SetMode(mgo.Monotonic, true)
-	return session.Clone(), nil
+	return session, nil
 }
 
 func (db *DB) Collection() *mgo.Collection {
-	return db.Session.DB(dbName).C(patientCollection)
+	return db.Session.Clone().DB(dbName).C(patientCollection)
 }
