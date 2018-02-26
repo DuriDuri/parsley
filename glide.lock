@@ -1,0 +1,59 @@
+hash: 1b0d5a7905cb1a4a0d9d5e35fe2294029f82b5c424eaf191f9fc63989570f4e5
+updated: 2018-02-26T00:16:37.32586-05:00
+imports:
+- name: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
+- name: github.com/gin-gonic/gin
+  version: 5d3f30cfc81f9109850fa9043a19783cbbde68a5
+  subpackages:
+  - binding
+  - json
+  - render
+- name: github.com/go-playground/locales
+  version: e4cbcb5d0652150d40ad0646651076b6bd2be4f6
+  subpackages:
+  - currency
+- name: github.com/go-playground/universal-translator
+  version: 71201497bace774495daed26a3874fd339e0b538
+- name: github.com/golang/protobuf
+  version: bbd03ef6da3a115852eaf24c8a1c46aeb39aa175
+  subpackages:
+  - proto
+- name: github.com/json-iterator/go
+  version: fff342fd040c4460be37f6f98413e73eff0ac3ff
+- name: github.com/mattn/go-isatty
+  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
+- name: github.com/Sirupsen/logrus
+  version: 8c0189d9f6bbf301e5d055d34268156b317016af
+- name: github.com/ugorji/go
+  version: 16f09ef744fd4227190f626f14cfdefb14362b3b
+  subpackages:
+  - codec
+- name: github.com/v2pro/plz
+  version: aefdc92c60f2df497bae7235b07885367f84f1ea
+  subpackages:
+  - concurrent
+  - reflect2
+- name: golang.org/x/crypto
+  version: 49796115aa4b964c318aad4f3084fdb41e9aa067
+  subpackages:
+  - ssh/terminal
+- name: golang.org/x/sys
+  version: f6cff0780e542efa0c8e864dc8fa522808f6a598
+  subpackages:
+  - unix
+  - windows
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
+- name: gopkg.in/go-playground/validator.v9
+  version: 150fe5b6a4ccc9cd6ffdbf5d184b67fbea75efcc
+- name: gopkg.in/mgo.v2
+  version: 3f83fa5005286a7fe593b055f0d7771a7dce4655
+  subpackages:
+  - bson
+  - internal/json
+  - internal/sasl
+  - internal/scram
+- name: gopkg.in/yaml.v2
+  version: 7f97868eec74b32b0982dd158a51a446d1da7eb5
+testImports: []

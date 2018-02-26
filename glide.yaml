@@ -1,0 +1,4 @@
+package: github.com/DuriDuri/parsley
+import:
+- package: github.com/Sirupsen/logrus
+- package: github.com/gin-gonic/gin
