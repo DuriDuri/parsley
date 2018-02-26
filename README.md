@@ -2,6 +2,10 @@
 
 This application presents a database-driven API that writes and reads simple patient objects.
 
+### Running service
+
+Clone repository and use Docker Compose to build and launch the application containers. You can access it on port `:8080`
+
 ### Features
 
 This application allows basic CRUD operations on the simple patient object.
@@ -47,11 +51,6 @@ The API insures that all incoming (inserts/updates) requests are processed if th
   }
 }
 ```
-
-
-### Running service
-
-Clone repository and use Docker Compose to build and launch the application containers
 
 ### Architecture
 
